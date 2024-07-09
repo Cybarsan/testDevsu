@@ -36,12 +36,13 @@ public class MovimientosServicio implements IMovimientosService{
 
     @Override
     public Movimientos guardarMovimiento(Movimientos movimientos) {
+        Integer idcuenta
         public void registrarMovimiento(movimientos)  {
-            private Integer idcuenta = movimientos.getCuentas().getIdcuenta();
+            idcuenta = movimientos.getCuentas().getIdcuenta();
             Optional<Cuentas> cuentas = cuentasRepositorio.findById(idcuenta);
 
-            if (movimientos.getValormovimiento().compareTo(cuentas.getSaldoactual()) > 0) {
-                 ("Saldo no disponible");
+            if (movimientos.getValormovimiento().compareTo(cuentas.get().getSaldoactual()) > 0) {
+                 throw new Exception("Saldo no disponible");
             }
 
             cuentas.setSaldoactual(cuentas.getSaldoactual().subtract(movimientos.getValormovimiento()));
