@@ -14,7 +14,7 @@ import test.devsu.servicio.PersonaServicio;
 import java.util.List;
 
 @RestController
-@RequestMapping("cuentas-app")
+@RequestMapping("clientes-app")
 public class ClientesControlador {
     private static final Logger logger = LoggerFactory.getLogger(ClientesControlador.class);
 

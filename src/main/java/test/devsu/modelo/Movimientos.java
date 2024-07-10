@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
@@ -13,15 +14,15 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Movimientos {
+public class Movimientos  {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer idmovimiento;
 
     Integer entidad;
     Date fechamovimiento;
-    Float valormovimiento;
-    Float saldomovimiento;
+    BigDecimal valormovimiento;
+    BigDecimal saldomovimiento;
     Boolean estado;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)

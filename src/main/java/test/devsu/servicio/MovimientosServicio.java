@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class MovimientosServicio implements IMovimientosService{
+public class MovimientosServicio implements IMovimientosService {
     @Autowired
     private MovimientosRepositorio movimientosRepositorio;
     @Autowired
@@ -29,26 +29,10 @@ public class MovimientosServicio implements IMovimientosService{
         return movimientos;
     }
 
-  /*  @Override
-    public Movimientos buscarMonivimientosNro(String nrocuenta) {
-        return null;
-    }    */
-
     @Override
     public Movimientos guardarMovimiento(Movimientos movimientos) {
-        Integer idcuenta
-        public void registrarMovimiento(movimientos)  {
-            idcuenta = movimientos.getCuentas().getIdcuenta();
-            Optional<Cuentas> cuentas = cuentasRepositorio.findById(idcuenta);
-
-            if (movimientos.getValormovimiento().compareTo(cuentas.get().getSaldoactual()) > 0) {
-                 throw new Exception("Saldo no disponible");
-            }
-
-            cuentas.setSaldoactual(cuentas.getSaldoactual().subtract(movimientos.getValormovimiento()));
-            cuentasRepositorio.save(cuentas);
-
-            movimientosRepositorio.save(movimientos);
-        }
+        return movimientosRepositorio.save(movimientos);
     }
+
+
 }

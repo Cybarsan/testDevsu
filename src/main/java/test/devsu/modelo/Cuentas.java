@@ -9,6 +9,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.math.BigDecimal;
+import java.util.Date;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -20,9 +23,10 @@ public class Cuentas {
     Integer idcuenta;
     String nrocuenta;
     String tipocuenta;
-    Float saldoinicial;
-    Float saldoactual;
+    BigDecimal saldoinicial;
+    BigDecimal saldoactual;
     Boolean estado;
+    Date fechaapertura;
 
     Integer idcliente;
 
