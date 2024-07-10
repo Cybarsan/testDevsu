@@ -2,7 +2,8 @@
 
 ## Json para agregar clientes / personas, se pasa el parametro idcliente en el endpoint
 
-'''{
+'''
+{
         "contrasenia": "1234567",
         "estado": true,
         "persona": {
