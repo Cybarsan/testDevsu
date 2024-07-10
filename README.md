@@ -2,7 +2,7 @@
 
 ## Json para agregar clientes / personas, se pasa el parametro idcliente en el endpoint
 
-'''
+```
 {
         "contrasenia": "1234567",
         "estado": true,
@@ -17,10 +17,11 @@
             "edad": 50
         }
     }
-'''	
+```	
 	
 ## Json Para modificar clientes / personas, se pasa el parametro idcliente en el endpoint 
-'''
+
+```
 {
     "contrasenia": "2222222",
     "estado": true,
@@ -35,10 +36,11 @@
         "edad": 30
     }
 }
-'''
+```
 ## Json para crear una nueva cuenta
 // URL: 
-'''
+
+```
 {
         "nrocuenta": "555444333",
         "tipocuenta": "Cuenta Corriente",
@@ -46,17 +48,17 @@
         "estado": true,
         "idcliente": 1
     }
-'''
+```
 	
 	//Json para registrar un movimiento
 	//URL: localhost:8080/cuentas-app/movimientos
 	//Contenido del Body
-'''	
-	{
+```
+{
         "valormovimiento": 850.00,
         "estado": true,
         "cuentas": {
             "idcuenta": 6
         }
-    }
-'''	
+}
+```	
