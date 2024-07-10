@@ -1,7 +1,8 @@
 # Prueba tecnica de Devsu para desarrollador Backend Java Spring Boot
 
 ## Json para agregar clientes / personas, se pasa el parametro idcliente en el endpoint
-{
+
+'''{
         "contrasenia": "1234567",
         "estado": true,
         "persona": {
@@ -15,9 +16,10 @@
             "edad": 50
         }
     }
-	
+'''	
 	
 ## Json Para modificar clientes / personas, se pasa el parametro idcliente en el endpoint 
+'''
 {
     "contrasenia": "2222222",
     "estado": true,
@@ -32,7 +34,7 @@
         "edad": 30
     }
 }
-
+'''
 ## Json para crear una nueva cuenta
 // URL: 
 '''
@@ -48,7 +50,7 @@
 	//Json para registrar un movimiento
 	//URL: localhost:8080/cuentas-app/movimientos
 	//Contenido del Body
-	
+'''	
 	{
         "valormovimiento": 850.00,
         "estado": true,
@@ -56,4 +58,4 @@
             "idcuenta": 6
         }
     }
-	
+'''	
